@@ -1,8 +1,8 @@
-Rmaps Folder
+## Rmaps Folder
 The Rmaps folder contains files and R scripts needed to build the US and world heatmaps provided as PDF files. The maps show the number of submissions to NCBI from each country and the corresponding number of centers from each country that submitted the samples. 
 
 
-R Packages
+## R Packages
 fiftystater
 dplyr
 rworldmap
@@ -10,7 +10,7 @@ readxl
 ggplot2
 
 
-Data Folder
+## Data Folder
 
 The data folder includes necessary excel spreadsheets and R scripts to create the maps. 
 Fiftystater_submissions: excel spreadsheet containing data from the Fifty_stater R package to build the US map. 
