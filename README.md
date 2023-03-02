@@ -26,6 +26,16 @@ An API key is required to use the Google Maps API. To obtain one, follow the ins
 
 
 
-## Natural Language Processing 
 
-The scripts make use of Natural Language Processing (NLP) techniques to perform fuzzy matching between datasets. The necessary NLP libraries and modules will be imported as needed in the Fuzzy_match.ipynb script.
+## First Step
+
+run 'NCBI_webScrape.ipynb'
+
+## Second Step
+
+run 'Fuzzy_match.ipynb'
+
+## Third Step
+
+run 'geolocator_google_API.ipynb'
+
