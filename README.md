@@ -7,6 +7,7 @@ This folder contains the necessary scripts and data files to scrape, geolocate, 
 The following libraries need to be installed to run the scripts: 
 
 ```bash 
+python version -3.10.6 up
 beautifulsoup: pip install beautifulsoup 
 tqdm: pip install tqdm 
 googlemaps: pip install googlemaps 
