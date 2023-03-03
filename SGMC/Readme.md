@@ -30,7 +30,7 @@ follow the instructions on the Google Maps API website. Once you have
 obtained an API key, store it in a secure location and use it in 
 the geolocator_google_API.ipynb script where indicated. 
 
-Geocoding Libraries 
+# Geocoding Libraries 
 
 
 The following libraries are used for geocoding: 
@@ -38,14 +38,14 @@ The following libraries are used for geocoding:
 Nominatim: Installed as part of the geopy library. To install, run pip install geopy. 
 GoogleV3: Installed as part of the googlemaps library. To install, run pip install googlemaps. 
 
-First Step
+# First Step
 
 run '01_NCBI_webScrape.ipynb'
 
-Second Step
+# Second Step
 
 run '02_Fuzzy_match.ipynb'
 
-Third Step
+# Third Step
 
 run '03_geolocator_google_API.ipynb'
