@@ -1,9 +1,9 @@
-Data Curation Folder 
+## Data Curation Folder 
 
 This folder contains the necessary scripts and data files to scrape, geolocate, and 
 process data from the National Center for Biotechnology Information (NCBI). 
 
-Files 
+# Files 
 
 NCBI_webScrape.ipynb: A Jupyter Notebook script for scraping data from the NCBI website. 
 
@@ -15,7 +15,7 @@ sample_data.csv: A sample dataset with 30 records used for testing the scraping 
 
 Globe-institution_data.csv: A dataset containing geolocated institutions from around the world. Read.me: This file. 
 
-Required Libraries:
+# Required Libraries:
 
 The following libraries need to be installed to run the scripts: 
 
