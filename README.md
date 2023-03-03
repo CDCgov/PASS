@@ -2,6 +2,15 @@
 Polio and Picornavirus Laboratory Branch (PPLB)
 
 This folder contains the necessary scripts and data files to scrape, geolocate, and process data from the National Center for Biotechnology Information (NCBI). 
+
+# Install all Packages
+
+Use Terminal Run 
+
+```bash 
+pyhton requirements.txt
+```
+
 ## Installation
 
 The following libraries need to be installed to run the scripts: 
@@ -24,8 +33,6 @@ GoogleV3: Installed as part of the googlemaps library. To install,
 
 
 An API key is required to use the Google Maps API. To obtain one, follow the instructions on the Google Maps API website. Once you have obtained an API key, store it in a secure location and use it in the geolocator_google_API.ipynb script where indicated. 
-
-
 
 
 ## First Step
