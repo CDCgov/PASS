@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d864755a3b6d613ab65cc4f83fa3db8e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d864755a3b6d613ab65cc4f83fa3db8e" ></div>
+        
+</body>
+<script>    
+    
+            var map_d864755a3b6d613ab65cc4f83fa3db8e = L.map(
+                "map_d864755a3b6d613ab65cc4f83fa3db8e",
+                {
+                    center: [24.39133139285715, 40.391783325],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bb15d14df0f1fcd21eaa800b5302c086 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+            var circle_marker_7226dfa2e0bc595002d0f23d4c0e3018 = L.circleMarker(
+                [-25.274398, 133.775136],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.92, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_1cff2793b489911487acffeed2f5297b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b990339e100b8a943fea6d55c56c02e = $(`<div id="html_5b990339e100b8a943fea6d55c56c02e" style="width: 100.0%; height: 100.0%;">Center Name: AUSTRALIAN INSTITUTE OF MARINCE SCIENCES  Country/territory: Australia  Score: 92.0</div>`)[0];
+                popup_1cff2793b489911487acffeed2f5297b.setContent(html_5b990339e100b8a943fea6d55c56c02e);
+            
+        
+
+        circle_marker_7226dfa2e0bc595002d0f23d4c0e3018.bindPopup(popup_1cff2793b489911487acffeed2f5297b)
+        ;
+
+        
+    
+    
+            var circle_marker_dff3e8bed0b1c5b431d680f0acd06626 = L.circleMarker(
+                [42.2520353, -71.8245381],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_87c69098a4857b2911ec0a7cf81abd55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5390032c99f65531b0fedcba9aad53ba = $(`<div id="html_5390032c99f65531b0fedcba9aad53ba" style="width: 100.0%; height: 100.0%;">Center Name: CLARK UNIVERSITY  Country/territory: United States of America (USA)  Score: 100.0</div>`)[0];
+                popup_87c69098a4857b2911ec0a7cf81abd55.setContent(html_5390032c99f65531b0fedcba9aad53ba);
+            
+        
+
+        circle_marker_dff3e8bed0b1c5b431d680f0acd06626.bindPopup(popup_87c69098a4857b2911ec0a7cf81abd55)
+        ;
+
+        
+    
+    
+            var circle_marker_877393ca9e193f997ffd3e189f9a6ad8 = L.circleMarker(
+                [33.8823476, -117.8851033],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.94, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_6e2668614223265b2f187d5e510893e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23f5bf6e604e45a2126cc06710c46d3c = $(`<div id="html_23f5bf6e604e45a2126cc06710c46d3c" style="width: 100.0%; height: 100.0%;">Center Name: CALIFORNIA STATE UNIVERSITY FULLERTON  Country/territory: United States of America (USA)  Score: 94.0</div>`)[0];
+                popup_6e2668614223265b2f187d5e510893e3.setContent(html_23f5bf6e604e45a2126cc06710c46d3c);
+            
+        
+
+        circle_marker_877393ca9e193f997ffd3e189f9a6ad8.bindPopup(popup_6e2668614223265b2f187d5e510893e3)
+        ;
+
+        
+    
+    
+            var circle_marker_5434bd55a322a41c78834f033cf7f799 = L.circleMarker(
+                [-25.274398, 133.775136],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.94, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_d1b36cecdee48f297a51daa78c85665a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0f2e0797ac9cc33fb9b79c9692e47dc = $(`<div id="html_d0f2e0797ac9cc33fb9b79c9692e47dc" style="width: 100.0%; height: 100.0%;">Center Name: AUSTRALIAN INSTITUTE OF MARINE SCIENCE  Country/territory: Australia  Score: 94.0</div>`)[0];
+                popup_d1b36cecdee48f297a51daa78c85665a.setContent(html_d0f2e0797ac9cc33fb9b79c9692e47dc);
+            
+        
+
+        circle_marker_5434bd55a322a41c78834f033cf7f799.bindPopup(popup_d1b36cecdee48f297a51daa78c85665a)
+        ;
+
+        
+    
+    
+            var circle_marker_d69e6d9867df5d8a63bfcc256d4a42d8 = L.circleMarker(
+                [-34.9213485, 138.5897369],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.73, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_b784c464eafc958a97660550fd031d9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8fc9cce4e7c163b60839eedae2eb18a = $(`<div id="html_a8fc9cce4e7c163b60839eedae2eb18a" style="width: 100.0%; height: 100.0%;">Center Name: AUSTRALIAN INSTITUTE OF TROPICAL HEALTH AND MEDICINE  Country/territory: Australia  Score: 73.0</div>`)[0];
+                popup_b784c464eafc958a97660550fd031d9f.setContent(html_a8fc9cce4e7c163b60839eedae2eb18a);
+            
+        
+
+        circle_marker_d69e6d9867df5d8a63bfcc256d4a42d8.bindPopup(popup_b784c464eafc958a97660550fd031d9f)
+        ;
+
+        
+    
+    
+            var circle_marker_0bb9e8a2f41e9077769ee06037c5de93 = L.circleMarker(
+                [48.84077449999999, 2.3108918],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.72, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_b0929aa01d3d81396afb6dd9e11f55c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74de1ead3e61fc4f8b19591bd0c13d2d = $(`<div id="html_74de1ead3e61fc4f8b19591bd0c13d2d" style="width: 100.0%; height: 100.0%;">Center Name: INSTITUT PASTEUR DE MONTEVIDEO  Country/territory: France  Score: 72.0</div>`)[0];
+                popup_b0929aa01d3d81396afb6dd9e11f55c1.setContent(html_74de1ead3e61fc4f8b19591bd0c13d2d);
+            
+        
+
+        circle_marker_0bb9e8a2f41e9077769ee06037c5de93.bindPopup(popup_b0929aa01d3d81396afb6dd9e11f55c1)
+        ;
+
+        
+    
+    
+            var circle_marker_d144445cb99566b026691026efcb51dd = L.circleMarker(
+                [11.5804421, 104.9165437],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.71, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_467b6225841510b567cecc88012f343c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e2744e77efd1e78967006cd52e67069 = $(`<div id="html_9e2744e77efd1e78967006cd52e67069" style="width: 100.0%; height: 100.0%;">Center Name: INSTITUT PASTEUR DE LA GUADELOUPE  Country/territory: Cambodia  Score: 71.0</div>`)[0];
+                popup_467b6225841510b567cecc88012f343c.setContent(html_9e2744e77efd1e78967006cd52e67069);
+            
+        
+
+        circle_marker_d144445cb99566b026691026efcb51dd.bindPopup(popup_467b6225841510b567cecc88012f343c)
+        ;
+
+        
+    
+    
+            var circle_marker_b7cded9d10b49f43e102c9498c608635 = L.circleMarker(
+                [31.230416, 121.473701],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.72, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_06fd824eb29926ce0ceca83eba7afcc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab84b7993404c9beabe5446797205470 = $(`<div id="html_ab84b7993404c9beabe5446797205470" style="width: 100.0%; height: 100.0%;">Center Name: INSTITUT PASTEUR OF SHANGHAI  Country/territory: China  Score: 72.0</div>`)[0];
+                popup_06fd824eb29926ce0ceca83eba7afcc0.setContent(html_ab84b7993404c9beabe5446797205470);
+            
+        
+
+        circle_marker_b7cded9d10b49f43e102c9498c608635.bindPopup(popup_06fd824eb29926ce0ceca83eba7afcc0)
+        ;
+
+        
+    
+    
+            var circle_marker_908aea30d7f918c9304206bda52fa34c = L.circleMarker(
+                [52.6298398, -1.1398564],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.73, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_362c9b6ed0ddc97f24d6392af3ebb3e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83520968e6bb214b4c47863202831f3e = $(`<div id="html_83520968e6bb214b4c47863202831f3e" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITE DE MONTREAL - IRBV  Country/territory: United Kingdom (UK)  Score: 73.0</div>`)[0];
+                popup_362c9b6ed0ddc97f24d6392af3ebb3e4.setContent(html_83520968e6bb214b4c47863202831f3e);
+            
+        
+
+        circle_marker_908aea30d7f918c9304206bda52fa34c.bindPopup(popup_362c9b6ed0ddc97f24d6392af3ebb3e4)
+        ;
+
+        
+    
+    
+            var circle_marker_5548a32671785f6032e029bbe6d4c983 = L.circleMarker(
+                [-45.47906709999999, 170.1547567],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.87, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_9871d0821792b0e4e2272e1f7ce1c553 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d5073d78e7d430c0e41302bd6a8fbb4 = $(`<div id="html_0d5073d78e7d430c0e41302bd6a8fbb4" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITY OF OTTAWA  Country/territory: New Zealand  Score: 87.0</div>`)[0];
+                popup_9871d0821792b0e4e2272e1f7ce1c553.setContent(html_0d5073d78e7d430c0e41302bd6a8fbb4);
+            
+        
+
+        circle_marker_5548a32671785f6032e029bbe6d4c983.bindPopup(popup_9871d0821792b0e4e2272e1f7ce1c553)
+        ;
+
+        
+    
+    
+            var circle_marker_d0fc7d488b7124e5c096d8c0318eff9c = L.circleMarker(
+                [46.3470249, -72.5785097],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.85, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_41c32ba30d0787865cd805e38c6d36e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ed85491bc237f76b82d633b0577b0ec = $(`<div id="html_0ed85491bc237f76b82d633b0577b0ec" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITE DU QUEBEC A TROIS-RIVIERES  Country/territory: Canada  Score: 85.0</div>`)[0];
+                popup_41c32ba30d0787865cd805e38c6d36e9.setContent(html_0ed85491bc237f76b82d633b0577b0ec);
+            
+        
+
+        circle_marker_d0fc7d488b7124e5c096d8c0318eff9c.bindPopup(popup_41c32ba30d0787865cd805e38c6d36e9)
+        ;
+
+        
+    
+    
+            var circle_marker_4b7d1063844cb5bbae20ab3deeed8d54 = L.circleMarker(
+                [52.1334003, -106.6313582],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.88, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_304698a59d590d2b7fbb25c5983a5d35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39fe181dfdb5ecc462f2207d6c881aa6 = $(`<div id="html_39fe181dfdb5ecc462f2207d6c881aa6" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITY OF SASKATCHEWAN  Country/territory: Canada  Score: 88.0</div>`)[0];
+                popup_304698a59d590d2b7fbb25c5983a5d35.setContent(html_39fe181dfdb5ecc462f2207d6c881aa6);
+            
+        
+
+        circle_marker_4b7d1063844cb5bbae20ab3deeed8d54.bindPopup(popup_304698a59d590d2b7fbb25c5983a5d35)
+        ;
+
+        
+    
+    
+            var circle_marker_c14cb91841fa91093891abbcafe911a2 = L.circleMarker(
+                [45.3779155, -71.92944050000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.73, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_2d6c2644a45456849571edd06454d25b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_155067471540ae61850edc27815e0bdf = $(`<div id="html_155067471540ae61850edc27815e0bdf" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITE DE SHERBROOKE  Country/territory: Canada  Score: 73.0</div>`)[0];
+                popup_2d6c2644a45456849571edd06454d25b.setContent(html_155067471540ae61850edc27815e0bdf);
+            
+        
+
+        circle_marker_c14cb91841fa91093891abbcafe911a2.bindPopup(popup_2d6c2644a45456849571edd06454d25b)
+        ;
+
+        
+    
+    
+            var circle_marker_914bb450f842a483131c3a2efe7c06a3 = L.circleMarker(
+                [43.6628917, -79.39565640000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.72, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_823c042913553764371e22521df91897 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c812baf41ad0c7530b0046223e173c1 = $(`<div id="html_7c812baf41ad0c7530b0046223e173c1" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITY OF TORONTO MISSISSAUGA  Country/territory: Canada  Score: 72.0</div>`)[0];
+                popup_823c042913553764371e22521df91897.setContent(html_7c812baf41ad0c7530b0046223e173c1);
+            
+        
+
+        circle_marker_914bb450f842a483131c3a2efe7c06a3.bindPopup(popup_823c042913553764371e22521df91897)
+        ;
+
+        
+    
+    
+            var circle_marker_26b12716deac8a2cba88463be4b1e598 = L.circleMarker(
+                [32.9118672, -96.7739323],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.74, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_0d60f714d08a1a24ccc7728bb299f2b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af4946c585e6235fef98339fe2223307 = $(`<div id="html_af4946c585e6235fef98339fe2223307" style="width: 100.0%; height: 100.0%;">Center Name: CHILDREN HOSPITAL OF CHONGQING MEDICAL UNIVERSITY  Country/territory: United States of America (USA)  Score: 74.0</div>`)[0];
+                popup_0d60f714d08a1a24ccc7728bb299f2b5.setContent(html_af4946c585e6235fef98339fe2223307);
+            
+        
+
+        circle_marker_26b12716deac8a2cba88463be4b1e598.bindPopup(popup_0d60f714d08a1a24ccc7728bb299f2b5)
+        ;
+
+        
+    
+    
+            var circle_marker_dcbf0a5ef81803e4dd89b696da221742 = L.circleMarker(
+                [22.8039037, 108.3282918],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.83, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_00888d8c04109929daa0938b8fb3da05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb267f86b1f7053e71bf2c20fd798658 = $(`<div id="html_eb267f86b1f7053e71bf2c20fd798658" style="width: 100.0%; height: 100.0%;">Center Name: CHILDREN HOSPITAL OF GUANGXI ZHUANG AUTONOMOUS REGION  Country/territory: China  Score: 83.0</div>`)[0];
+                popup_00888d8c04109929daa0938b8fb3da05.setContent(html_eb267f86b1f7053e71bf2c20fd798658);
+            
+        
+
+        circle_marker_dcbf0a5ef81803e4dd89b696da221742.bindPopup(popup_00888d8c04109929daa0938b8fb3da05)
+        ;
+
+        
+    
+    
+            var circle_marker_fff3132037c53bf0986c40c6122a7e87 = L.circleMarker(
+                [48.74308449999999, 19.1188234],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.74, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_49e5a41e28e66c26f5046ddb7561fbff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_455166e7e282dee4c4f46cd7829d2b66 = $(`<div id="html_455166e7e282dee4c4f46cd7829d2b66" style="width: 100.0%; height: 100.0%;">Center Name: CHILDREN'S HOSPITAL OF CHONGQING MEDICAL UNIVERSITY  Country/territory: Slovakia  Score: 74.0</div>`)[0];
+                popup_49e5a41e28e66c26f5046ddb7561fbff.setContent(html_455166e7e282dee4c4f46cd7829d2b66);
+            
+        
+
+        circle_marker_fff3132037c53bf0986c40c6122a7e87.bindPopup(popup_49e5a41e28e66c26f5046ddb7561fbff)
+        ;
+
+        
+    
+    
+            var circle_marker_c3d0408a1d16cd4f5757c4ad1922136f = L.circleMarker(
+                [48.74308449999999, 19.1188234],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.88, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_0ad3fb63bf3d326ef3c92e87595962c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f47c96e2c8e7107bf6942e9fcefec71b = $(`<div id="html_f47c96e2c8e7107bf6942e9fcefec71b" style="width: 100.0%; height: 100.0%;">Center Name: CHILDREN'S HOSPITAL OF FUDAN UNIVERSITY  Country/territory: Slovakia  Score: 88.0</div>`)[0];
+                popup_0ad3fb63bf3d326ef3c92e87595962c7.setContent(html_f47c96e2c8e7107bf6942e9fcefec71b);
+            
+        
+
+        circle_marker_c3d0408a1d16cd4f5757c4ad1922136f.bindPopup(popup_0ad3fb63bf3d326ef3c92e87595962c7)
+        ;
+
+        
+    
+    
+            var circle_marker_822a80c0b1944fb234c54a0ea1a06bba = L.circleMarker(
+                [39.939, 116.426567],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.93, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_a60eb25d091482866665e9ce2ab1ccee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a51842e12dba1b806a4fb63fbb7d8513 = $(`<div id="html_a51842e12dba1b806a4fb63fbb7d8513" style="width: 100.0%; height: 100.0%;">Center Name: CHINA ACADEMY OF CHINESE MEDICAL SCIENCES  Country/territory: China  Score: 93.0</div>`)[0];
+                popup_a60eb25d091482866665e9ce2ab1ccee.setContent(html_a51842e12dba1b806a4fb63fbb7d8513);
+            
+        
+
+        circle_marker_822a80c0b1944fb234c54a0ea1a06bba.bindPopup(popup_a60eb25d091482866665e9ce2ab1ccee)
+        ;
+
+        
+    
+    
+            var circle_marker_8476c78a20be49776495879005ddd4d5 = L.circleMarker(
+                [7.104638599999999, 124.8387327],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.78, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_09fd38aef1b00a2efec9b78924f2b738 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddec07d29492eb68ecc7f410a98b4934 = $(`<div id="html_ddec07d29492eb68ecc7f410a98b4934" style="width: 100.0%; height: 100.0%;">Center Name: NATIONAL CANCER CENTER/CANCER HOSPITAL, CHINESE ACADEMY OF MEDICAL SCIENCES  Country/territory: Philippines  Score: 78.0</div>`)[0];
+                popup_09fd38aef1b00a2efec9b78924f2b738.setContent(html_ddec07d29492eb68ecc7f410a98b4934);
+            
+        
+
+        circle_marker_8476c78a20be49776495879005ddd4d5.bindPopup(popup_09fd38aef1b00a2efec9b78924f2b738)
+        ;
+
+        
+    
+    
+            var circle_marker_9b372ab373a72a13c06d8cb71c60476d = L.circleMarker(
+                [39.927972, 116.336162],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.78, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_06d625d82abd7c5082ed9baf48ccbcd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7343c94015d56bf48611d8925b0779c8 = $(`<div id="html_7343c94015d56bf48611d8925b0779c8" style="width: 100.0%; height: 100.0%;">Center Name: nan  Country/territory: China  Score: 78.0</div>`)[0];
+                popup_06d625d82abd7c5082ed9baf48ccbcd0.setContent(html_7343c94015d56bf48611d8925b0779c8);
+            
+        
+
+        circle_marker_9b372ab373a72a13c06d8cb71c60476d.bindPopup(popup_06d625d82abd7c5082ed9baf48ccbcd0)
+        ;
+
+        
+    
+    
+            var circle_marker_09b57c720da905f9f69e844240ac9a53 = L.circleMarker(
+                [34.727581, 114.028981],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_a0a59b14e0258c82b5cbffb880136970 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27654237133963a04fa3f75452439c8e = $(`<div id="html_27654237133963a04fa3f75452439c8e" style="width: 100.0%; height: 100.0%;">Center Name: CHINA ACADMY OF SCIENCES  Country/territory: China  Score: 90.0</div>`)[0];
+                popup_a0a59b14e0258c82b5cbffb880136970.setContent(html_27654237133963a04fa3f75452439c8e);
+            
+        
+
+        circle_marker_09b57c720da905f9f69e844240ac9a53.bindPopup(popup_a0a59b14e0258c82b5cbffb880136970)
+        ;
+
+        
+    
+    
+            var circle_marker_d5a78f9ff543ddbc404b278af050bf5e = L.circleMarker(
+                [26.1920826, 32.7452739],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.92, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_351bd232b34d0b45e76ad95fe170175d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9e533eb85de802be5388a71b111e425 = $(`<div id="html_b9e533eb85de802be5388a71b111e425" style="width: 100.0%; height: 100.0%;">Center Name: SOUTH VALLEY UNIVERSITY  Country/territory: Egypt  Score: 92.0</div>`)[0];
+                popup_351bd232b34d0b45e76ad95fe170175d.setContent(html_b9e533eb85de802be5388a71b111e425);
+            
+        
+
+        circle_marker_d5a78f9ff543ddbc404b278af050bf5e.bindPopup(popup_351bd232b34d0b45e76ad95fe170175d)
+        ;
+
+        
+    
+    
+            var circle_marker_7ae93194e2bc15418567880e5e2c1b03 = L.circleMarker(
+                [30.620533, 32.269729],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.91, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_3b46c9806c7941bca45a2469b8305a0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de53f11549fef59e1b77ac0778dd81fd = $(`<div id="html_de53f11549fef59e1b77ac0778dd81fd" style="width: 100.0%; height: 100.0%;">Center Name: SUEZ CANAL UNIVERSITY  Country/territory: Egypt  Score: 91.0</div>`)[0];
+                popup_3b46c9806c7941bca45a2469b8305a0c.setContent(html_de53f11549fef59e1b77ac0778dd81fd);
+            
+        
+
+        circle_marker_7ae93194e2bc15418567880e5e2c1b03.bindPopup(popup_3b46c9806c7941bca45a2469b8305a0c)
+        ;
+
+        
+    
+    
+            var circle_marker_579cf2020652d417066d2f27a66584a5 = L.circleMarker(
+                [9.0335063, 38.7636817],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.92, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_168c2d29ecffd43e3a53818c3aff2af5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af829372d9d999718784d2c85a728323 = $(`<div id="html_af829372d9d999718784d2c85a728323" style="width: 100.0%; height: 100.0%;">Center Name: ADDIS ABABA UNIVERSITY  Country/territory: Ethiopia  Score: 92.0</div>`)[0];
+                popup_168c2d29ecffd43e3a53818c3aff2af5.setContent(html_af829372d9d999718784d2c85a728323);
+            
+        
+
+        circle_marker_579cf2020652d417066d2f27a66584a5.bindPopup(popup_168c2d29ecffd43e3a53818c3aff2af5)
+        ;
+
+        
+    
+    
+            var circle_marker_6e25ebcfcf85db9e9b130733bd705821 = L.circleMarker(
+                [20.593684, 78.96288],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_28999d8cd92648e78c5f2d3b71423d60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24dbba753a0d9aeaa96e48a47f77aaea = $(`<div id="html_24dbba753a0d9aeaa96e48a47f77aaea" style="width: 100.0%; height: 100.0%;">Center Name: INTERNATIONAL CROPS RESEARCH INSTITUTE FOR THE SEMI-ARID TROPICS (ICRISAT)  Country/territory: India  Score: 100.0</div>`)[0];
+                popup_28999d8cd92648e78c5f2d3b71423d60.setContent(html_24dbba753a0d9aeaa96e48a47f77aaea);
+            
+        
+
+        circle_marker_6e25ebcfcf85db9e9b130733bd705821.bindPopup(popup_28999d8cd92648e78c5f2d3b71423d60)
+        ;
+
+        
+    
+    
+            var circle_marker_fd155a06ef48b427cd7f196eb8026dc1 = L.circleMarker(
+                [8.7668055, 38.999083],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.94, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_b651ff905ecc5f3c1b59ec70c4985616 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ab9c3e80db4cf6106ee2bf2f63bb2a3 = $(`<div id="html_1ab9c3e80db4cf6106ee2bf2f63bb2a3" style="width: 100.0%; height: 100.0%;">Center Name: NATIONAL VETERINARY INSTITUTE  Country/territory: Ethiopia  Score: 94.0</div>`)[0];
+                popup_b651ff905ecc5f3c1b59ec70c4985616.setContent(html_1ab9c3e80db4cf6106ee2bf2f63bb2a3);
+            
+        
+
+        circle_marker_fd155a06ef48b427cd7f196eb8026dc1.bindPopup(popup_b651ff905ecc5f3c1b59ec70c4985616)
+        ;
+
+        
+    
+    
+            var circle_marker_3d4095ba82f26a56acbffb95df40eb97 = L.circleMarker(
+                [35.86166, 104.195397],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(map_d864755a3b6d613ab65cc4f83fa3db8e);
+        
+    
+        var popup_938dfb20874ee00ea573525084368ae7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14a3143cd7681b4107ee990e11120527 = $(`<div id="html_14a3143cd7681b4107ee990e11120527" style="width: 100.0%; height: 100.0%;">Center Name: BI  Country/territory: China  Score: 80.0</div>`)[0];
+                popup_938dfb20874ee00ea573525084368ae7.setContent(html_14a3143cd7681b4107ee990e11120527);
+            
+        
+
+        circle_marker_3d4095ba82f26a56acbffb95df40eb97.bindPopup(popup_938dfb20874ee00ea573525084368ae7)
+        ;
+
+        
+    
+</script>

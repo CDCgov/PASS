@@ -1,0 +1,12 @@
+folium==0.13.0
+geocoder==1.38.1
+geographiclib==1.52
+geojson==2.5.0
+geopy==2.2.0
+fuzzywuzzy==0.18.0
+googlemaps==4.6.0
+goopylib==1.0.226
+Levenshtein==0.20.8
+pandas==1.5.1
+tqdm==4.64.1
+requests==2.28.1
