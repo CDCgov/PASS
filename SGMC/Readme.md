@@ -3,6 +3,12 @@
 This folder contains the necessary scripts and data files to scrape, geolocate, and 
 process data from the National Center for Biotechnology Information (NCBI). 
 
+# Install all Packages
+ 
+use terminal to
+
+run 'pyhton requirements.txt'
+
 # Files 
 
 NCBI_webScrape.ipynb: A Jupyter Notebook script for scraping data from the NCBI website. 
@@ -15,7 +21,7 @@ sample_data.csv: A sample dataset with 30 records used for testing the scraping 
 
 Globe-institution_data.csv: A dataset containing geolocated institutions from around the world. Read.me: This file. 
 
-# Required Libraries:
+#  Required Libraries:
 
 The following libraries need to be installed to run the scripts: 
 
@@ -24,7 +30,7 @@ tqdm: pip install tqdm
 googlemaps: pip install googlemaps 
 folium: pip install folium 
 
-API Key 
+# API Key 
 An API key is required to use the Google Maps API. To obtain one, 
 follow the instructions on the Google Maps API website. Once you have 
 obtained an API key, store it in a secure location and use it in 
@@ -38,8 +44,8 @@ The following libraries are used for geocoding:
 Nominatim: Installed as part of the geopy library. To install, run pip install geopy. 
 GoogleV3: Installed as part of the googlemaps library. To install, run pip install googlemaps. 
 
-# First Step
 
+# First Step
 run '01_NCBI_webScrape.ipynb'
 
 # Second Step
