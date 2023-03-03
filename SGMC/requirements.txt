@@ -10,3 +10,5 @@ Levenshtein==0.20.8
 pandas==1.5.1
 tqdm==4.64.1
 requests==2.28.1
+matplotlib==3.6.1
+geocoder==1.38.1
