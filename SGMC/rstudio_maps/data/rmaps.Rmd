@@ -6,9 +6,9 @@ library(rworldmap)
 library(readxl)
 library(ggplot2, lib.loc = "/opt/R/4.0.4/lib/R/library")
 
-#install.packages('rworldmap',dependencies=TRUE) 
-#devtools::install_github("wmurphyrd/fiftystater")
+
 ```
+
 
 ```{r us heatmap}
 map <- read_excel("~/Rmaps/data/fiftystater_submissions.xlsx") 
@@ -16,19 +16,19 @@ center <- read_excel("~/Rmaps/data/us_centercount.xlsx")
 
 color_breaks <- c(1,10,100,500,10000,100000,200000)
 colors <- c('#deebf7','#c6dbef','#c6dbef','#4292c6', '#2171b5','#08306b')
-count_breaks <- c(1,10,100,200)
-labels <- c('>1','>10','>100','>200')
+count_breaks <- c(2,10,50,100)
+labels <- c('>1','>10','>50','>100')
 
 p1<-ggplot(data = map) + 
    geom_map(map = map, aes(map_id = id, fill = sample), color = "black", size=0.13) + 
   expand_limits(x = map$long, y = map$lat) +
   theme_void() +
   coord_fixed(1.3) +
- scale_fill_gradientn(name = "Submissions",limits = range(map$sample),colors =  colors[c(1, seq_along(colors), length(colors))], values  = c(0, scales::rescale(color_breaks, from = range(map$sample)), 1),guide="colorbar")+
+ scale_fill_gradientn(limits = range(map$sample),colors =  colors[c(1, seq_along(colors), length(colors))], values  = c(0, scales::rescale(color_breaks, from = range(map$sample)), 1),guide="colorbar")+
     geom_point(data=center, aes(x=long, y=lat, size=center_count),colour="#8B7357",fill="#FFECCC",pch=21, alpha=I(0.7))+
-  scale_size(range=c(2,11),breaks=count_breaks,labels=c(labels),guide="legend") +
-  labs(size="Center Count", size=8)
-  
+  scale_size(range=c(2,11),breaks=count_breaks,labels=c(labels),guide="legend")+
+  guides(fill=guide_colorbar("Total State \nSubmissions",order =1), size = guide_legend("Total Center\nper State", order=2)) + theme(legend.title=element_text(size=10))
+ 
  p1
  
 ```
@@ -37,7 +37,7 @@ p1<-ggplot(data = map) +
 map <- read_excel("~/Rmaps/data/rworldmap_submissions.xlsx")
 center <- read_excel("~/Rmaps/data/world_centercount.xlsx")
 
-color_breaks <- c(0,1,10,100,1000,10000,100000,1000000)
+color_breaks <- c(0,1,10,100,1000,10000,100000,1000934)
 colors <- c('white','#deebf7','#c6dbef','#9ecae1','#6baed6','#4292c6','#2171b5','#08519c','#08306b')
 count_breaks <- c(1,10,100,1000,2000)
 labels <- c('>1','>10','>100','>1000','>2000')
@@ -47,8 +47,13 @@ p2<-ggplot(data = map) +
   geom_polygon(aes(x = long, y = lat, group = group, fill = sample), color = "black", size=0.13)+
   coord_fixed(1.3) +
  scale_fill_gradientn(name = "Submissions",limits = range(map$sample),colors =  colors[c(1, seq_along(colors), length(colors))], values  = c(0, scales::rescale(color_breaks, from = range(map$sample)), 1),guide="colorbar")+
-theme_void() + theme(legend.title=element_text(size = 9)) + geom_point(data=center, aes(x=long, y=lat, size=center_count),colour="#8B7357",fill="#FFECCC",pch=21, alpha=I(0.7))+scale_size(range=c(2,8),breaks=count_breaks,labels=c(labels),guide="legend") +labs(size="Center Count", size=9)
-
+theme_void() + theme(legend.title=element_text(size = 9)) + geom_point(data=center, aes(x=long, y=lat, size=center_count),colour="#8B7357",fill="#FFECCC",pch=21, alpha=I(0.7))+scale_size(range=c(2,8),breaks=count_breaks,labels=c(labels),guide="legend") +
+  guides(fill=guide_colorbar("Total Country \nSubmissions",order =1), size = guide_legend("Total Centers\nper Country", order=2)) + theme(legend.title=element_text(size=10))
 p2
 
 ```
+
+
+
+
+

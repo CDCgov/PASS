@@ -3,6 +3,8 @@
 This folder contains the necessary scripts and data files to scrape, geolocate, and 
 process data from the National Center for Biotechnology Information (NCBI). 
 
+
+
 # Install all Packages
  
 use terminal to
@@ -15,7 +17,7 @@ NCBI_webScrape.ipynb: A Jupyter Notebook script for scraping data from the NCBI 
 
 geolocator_google_API.ipynb: A Jupyter Notebook script for geolocating institutions based on their addresses using Google Maps API. 
 
-Fuzzy_match.ipynb: A Jupyter Notebook script for performing fuzzy matching between two datasets. 
+ChatGPT_API.ipynb: 
 
 sample_data.csv: A sample dataset with 30 records used for testing the scraping and geolocation scripts. 
 
@@ -48,9 +50,11 @@ GoogleV3: Installed as part of the googlemaps library. To install, run pip insta
 # First Step
 run '01_NCBI_webScrape.ipynb'
 
+This Python script extracts specific data from the NCBI (National Center for Biotechnology Information) website using web scraping techniques. The script pulls data related to the Submitted_by, ID, Biosample_Submission, and Bioproject_Submission fields for a given set of accession numbers (Acc).
+
 # Second Step
 
-run '02_Fuzzy_match.ipynb'
+run '02_ChatGPT_API_Institution Imputation.ipynb'
 
 # Third Step
 
