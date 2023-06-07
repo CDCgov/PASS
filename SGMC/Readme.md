@@ -7,9 +7,11 @@ process data from the National Center for Biotechnology Information (NCBI).
 
 # Install all Packages
  
-use terminal to
+1. Install the required dependencies:
 
-run 'pyhton requirements.txt'
+```shell
+$ pip install -r requirements.txt
+```
 
 # Files 
 
