@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ec5235c25aafbb814b9e21499c128125 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ec5235c25aafbb814b9e21499c128125" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ec5235c25aafbb814b9e21499c128125 = L.map(
+                "map_ec5235c25aafbb814b9e21499c128125",
+                {
+                    center: [26.035939405714284, 4.271148951428572],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b1f67f434b36a23ef3f23f1f70937b08 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+            var circle_marker_2fa4a2ec62fbeaf147e89f18fd49c11f = L.circleMarker(
+                [-25.274398, 133.775136],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_9712cd452928f1b492d5110e39292fb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e85a40bd126deddcc94b146bbb98cda3 = $(`<div id="html_e85a40bd126deddcc94b146bbb98cda3" style="width: 100.0%; height: 100.0%;">Center Name: AUSTRALIAN INSTITUTE OF MARINCE SCIENCES  Country_chatGPT: Australia  Google_Maps_Full Address: Australia </div>`)[0];
+                popup_9712cd452928f1b492d5110e39292fb9.setContent(html_e85a40bd126deddcc94b146bbb98cda3);
+            
+        
+
+        circle_marker_2fa4a2ec62fbeaf147e89f18fd49c11f.bindPopup(popup_9712cd452928f1b492d5110e39292fb9)
+        ;
+
+        
+    
+    
+            var circle_marker_b9d215f9671a28070122352882e37c43 = L.circleMarker(
+                [42.2520353, -71.8245381],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_03ced27a759b57ab0f0f185a4ffcbe61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6e474998a4ef00c821b6ee5bc839842 = $(`<div id="html_b6e474998a4ef00c821b6ee5bc839842" style="width: 100.0%; height: 100.0%;">Center Name: CLARK UNIVERSITY  Country_chatGPT: United States  Google_Maps_Full Address: 950 Main St, Worcester, MA 01610, USA </div>`)[0];
+                popup_03ced27a759b57ab0f0f185a4ffcbe61.setContent(html_b6e474998a4ef00c821b6ee5bc839842);
+            
+        
+
+        circle_marker_b9d215f9671a28070122352882e37c43.bindPopup(popup_03ced27a759b57ab0f0f185a4ffcbe61)
+        ;
+
+        
+    
+    
+            var circle_marker_cef0db46f92a71f24be734da56114d21 = L.circleMarker(
+                [33.8823476, -117.8851033],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_68b32612893808739a0863ab27a6ca91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca0c477c4d45d55b372172a53380f28d = $(`<div id="html_ca0c477c4d45d55b372172a53380f28d" style="width: 100.0%; height: 100.0%;">Center Name: CALIFORNIA STATE UNIVERSITY FULLERTON  Country_chatGPT: United States  Google_Maps_Full Address: 800 N State College Blvd, Fullerton, CA 92831, USA </div>`)[0];
+                popup_68b32612893808739a0863ab27a6ca91.setContent(html_ca0c477c4d45d55b372172a53380f28d);
+            
+        
+
+        circle_marker_cef0db46f92a71f24be734da56114d21.bindPopup(popup_68b32612893808739a0863ab27a6ca91)
+        ;
+
+        
+    
+    
+            var circle_marker_b604f87c8ab30d14588eaa605a2649cc = L.circleMarker(
+                [33.8823476, -117.8851033],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_4bb5a6c5b470fe14827239750b9d0eb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32f49438e9ea0aa29728ef0283ee3591 = $(`<div id="html_32f49438e9ea0aa29728ef0283ee3591" style="width: 100.0%; height: 100.0%;">Center Name: CALIFORNIA STATE UNIVERSITY, FULLERTON  Country_chatGPT: United States.  Google_Maps_Full Address: 800 N State College Blvd, Fullerton, CA 92831, USA </div>`)[0];
+                popup_4bb5a6c5b470fe14827239750b9d0eb2.setContent(html_32f49438e9ea0aa29728ef0283ee3591);
+            
+        
+
+        circle_marker_b604f87c8ab30d14588eaa605a2649cc.bindPopup(popup_4bb5a6c5b470fe14827239750b9d0eb2)
+        ;
+
+        
+    
+    
+            var circle_marker_8962520b986641cae63f10a08ed1dc63 = L.circleMarker(
+                [34.0663797, -118.1684782],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_022232acaa32a797387f3f4aeb3ee7cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_166d0e64a472af80ddfce0ae095e4a10 = $(`<div id="html_166d0e64a472af80ddfce0ae095e4a10" style="width: 100.0%; height: 100.0%;">Center Name: CALIFORNIA STATE UNIVERSITY, LOS ANGELES  Country_chatGPT: United States  Google_Maps_Full Address: 5151 State University Dr, Los Angeles, CA 90032, USA </div>`)[0];
+                popup_022232acaa32a797387f3f4aeb3ee7cd.setContent(html_166d0e64a472af80ddfce0ae095e4a10);
+            
+        
+
+        circle_marker_8962520b986641cae63f10a08ed1dc63.bindPopup(popup_022232acaa32a797387f3f4aeb3ee7cd)
+        ;
+
+        
+    
+    
+            var circle_marker_80f31fcdbce551a6142bf1e001ce39db = L.circleMarker(
+                [34.2406756, -118.5300196],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_873e0b7e5da654e8f4386d0afd2b572c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f856f635baed2f7f3d75868b4c6cce61 = $(`<div id="html_f856f635baed2f7f3d75868b4c6cce61" style="width: 100.0%; height: 100.0%;">Center Name: CALIFORNIA STATE UNIVERSITY, NORTHRIDGE  Country_chatGPT: United States  Google_Maps_Full Address: 18111 Nordhoff St, Northridge, CA 91330, USA </div>`)[0];
+                popup_873e0b7e5da654e8f4386d0afd2b572c.setContent(html_f856f635baed2f7f3d75868b4c6cce61);
+            
+        
+
+        circle_marker_80f31fcdbce551a6142bf1e001ce39db.bindPopup(popup_873e0b7e5da654e8f4386d0afd2b572c)
+        ;
+
+        
+    
+    
+            var circle_marker_0a4dd73be11df56b361ac41f11e02704 = L.circleMarker(
+                [37.09024, -95.712891],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_a3d2828664284eee025c1f1f78508f4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc185dab0aa0df1d2ea52ae78d023259 = $(`<div id="html_fc185dab0aa0df1d2ea52ae78d023259" style="width: 100.0%; height: 100.0%;">Center Name: CFSAN  Country_chatGPT: United States  Google_Maps_Full Address: United States </div>`)[0];
+                popup_a3d2828664284eee025c1f1f78508f4c.setContent(html_fc185dab0aa0df1d2ea52ae78d023259);
+            
+        
+
+        circle_marker_0a4dd73be11df56b361ac41f11e02704.bindPopup(popup_a3d2828664284eee025c1f1f78508f4c)
+        ;
+
+        
+    
+    
+            var circle_marker_5db0abf774737f572d91519b4de8cbee = L.circleMarker(
+                [-25.274398, 133.775136],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_80b9d6aca2721f450c35220d02caacfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af01439e9912c30421ee4beef0d18e45 = $(`<div id="html_af01439e9912c30421ee4beef0d18e45" style="width: 100.0%; height: 100.0%;">Center Name: AUSTRALIAN INSTITUTE OF MARINCE SCIENCES  Country_chatGPT: Australia  Google_Maps_Full Address: Australia </div>`)[0];
+                popup_80b9d6aca2721f450c35220d02caacfa.setContent(html_af01439e9912c30421ee4beef0d18e45);
+            
+        
+
+        circle_marker_5db0abf774737f572d91519b4de8cbee.bindPopup(popup_80b9d6aca2721f450c35220d02caacfa)
+        ;
+
+        
+    
+    
+            var circle_marker_9c398a7042dd5c98236251c16b302127 = L.circleMarker(
+                [-25.274398, 133.775136],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_380f7c7cacb208451a85e1884732a31f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc30f4c6f79a8dd5fe8536f5611967aa = $(`<div id="html_fc30f4c6f79a8dd5fe8536f5611967aa" style="width: 100.0%; height: 100.0%;">Center Name: AUSTRALIAN INSTITUTE OF MARINE SCIENCE  Country_chatGPT: Australia  Google_Maps_Full Address: Australia </div>`)[0];
+                popup_380f7c7cacb208451a85e1884732a31f.setContent(html_fc30f4c6f79a8dd5fe8536f5611967aa);
+            
+        
+
+        circle_marker_9c398a7042dd5c98236251c16b302127.bindPopup(popup_380f7c7cacb208451a85e1884732a31f)
+        ;
+
+        
+    
+    
+            var circle_marker_08cb5b2e203796f2e5514a8236961145 = L.circleMarker(
+                [-25.274398, 133.775136],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_c600af5be142660cebca1a0aa4e349bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ef9917d6cd263948f25fb73bdc8f0d3 = $(`<div id="html_6ef9917d6cd263948f25fb73bdc8f0d3" style="width: 100.0%; height: 100.0%;">Center Name: AUSTRALIAN INSTITUTE OF TROPICAL HEALTH AND MEDICINE  Country_chatGPT: Australia  Google_Maps_Full Address: Australia </div>`)[0];
+                popup_c600af5be142660cebca1a0aa4e349bd.setContent(html_6ef9917d6cd263948f25fb73bdc8f0d3);
+            
+        
+
+        circle_marker_08cb5b2e203796f2e5514a8236961145.bindPopup(popup_c600af5be142660cebca1a0aa4e349bd)
+        ;
+
+        
+    
+    
+            var circle_marker_fb2a4bd02fb08e82c2bfeabb945af2fa = L.circleMarker(
+                [-34.8834579, -56.1184537],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_24aefdd0eabbbff3e2b03ef297279ef2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20f257640d3ecc9fa30d1852acaa11f0 = $(`<div id="html_20f257640d3ecc9fa30d1852acaa11f0" style="width: 100.0%; height: 100.0%;">Center Name: INSTITUT PASTEUR DE MONTEVIDEO  Country_chatGPT: Uruguay  Google_Maps_Full Address: Mataojo 2020, 11400 Montevideo, Departamento de Montevideo, Uruguay </div>`)[0];
+                popup_24aefdd0eabbbff3e2b03ef297279ef2.setContent(html_20f257640d3ecc9fa30d1852acaa11f0);
+            
+        
+
+        circle_marker_fb2a4bd02fb08e82c2bfeabb945af2fa.bindPopup(popup_24aefdd0eabbbff3e2b03ef297279ef2)
+        ;
+
+        
+    
+    
+            var circle_marker_a71d564a3fd0777aec353afa15025169 = L.circleMarker(
+                [16.265, -61.55099999999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_d13e5e94b96b8431c8e651b4c3c9c420 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8725d67c98d7542bd59a346095a6a62 = $(`<div id="html_d8725d67c98d7542bd59a346095a6a62" style="width: 100.0%; height: 100.0%;">Center Name: INSTITUT PASTEUR DE LA GUADELOUPE  Country_chatGPT: France  Google_Maps_Full Address: Guadeloupe </div>`)[0];
+                popup_d13e5e94b96b8431c8e651b4c3c9c420.setContent(html_d8725d67c98d7542bd59a346095a6a62);
+            
+        
+
+        circle_marker_a71d564a3fd0777aec353afa15025169.bindPopup(popup_d13e5e94b96b8431c8e651b4c3c9c420)
+        ;
+
+        
+    
+    
+            var circle_marker_2f10b92dc88a0de2b4a5b5c90dd09bd1 = L.circleMarker(
+                [31.230416, 121.473701],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_71e59ad58804068401abf36070ff78e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebb6d5b3f8bf98f8c0b52bc42b9ae08c = $(`<div id="html_ebb6d5b3f8bf98f8c0b52bc42b9ae08c" style="width: 100.0%; height: 100.0%;">Center Name: INSTITUT PASTEUR OF SHANGHAI  Country_chatGPT: China  Google_Maps_Full Address: Shanghai, China </div>`)[0];
+                popup_71e59ad58804068401abf36070ff78e0.setContent(html_ebb6d5b3f8bf98f8c0b52bc42b9ae08c);
+            
+        
+
+        circle_marker_2f10b92dc88a0de2b4a5b5c90dd09bd1.bindPopup(popup_71e59ad58804068401abf36070ff78e0)
+        ;
+
+        
+    
+    
+            var circle_marker_35e736fd3895b7caef3f519b05ebc832 = L.circleMarker(
+                [45.5018869, -73.56739189999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_26747dee4f2064468a4caf1bf7538aae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d218836cdd522026d084b8dfaa48475 = $(`<div id="html_3d218836cdd522026d084b8dfaa48475" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITE DE MONTREAL - IRBV  Country_chatGPT: Canada  Google_Maps_Full Address: Montreal, QC, Canada </div>`)[0];
+                popup_26747dee4f2064468a4caf1bf7538aae.setContent(html_3d218836cdd522026d084b8dfaa48475);
+            
+        
+
+        circle_marker_35e736fd3895b7caef3f519b05ebc832.bindPopup(popup_26747dee4f2064468a4caf1bf7538aae)
+        ;
+
+        
+    
+    
+            var circle_marker_2f9bbf2ab7ea9b507d91f21b03eaf60d = L.circleMarker(
+                [56.130366, -106.346771],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_d578cdee2888e38022c9175621c60526 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f72a36a8fb3bef3e13e0befe1b8ea493 = $(`<div id="html_f72a36a8fb3bef3e13e0befe1b8ea493" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITY OF NEW BRUNSWICK  Country_chatGPT: Canada  Google_Maps_Full Address: Canada </div>`)[0];
+                popup_d578cdee2888e38022c9175621c60526.setContent(html_f72a36a8fb3bef3e13e0befe1b8ea493);
+            
+        
+
+        circle_marker_2f9bbf2ab7ea9b507d91f21b03eaf60d.bindPopup(popup_d578cdee2888e38022c9175621c60526)
+        ;
+
+        
+    
+    
+            var circle_marker_c1921508e3fdf25ae5e471e180626a39 = L.circleMarker(
+                [45.42310639999999, -75.68313289999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_65d91a61758e082c3e0aeeb0212e60f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc50a8b75ac6457767a36605d6909ace = $(`<div id="html_dc50a8b75ac6457767a36605d6909ace" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITY OF OTTAWA  Country_chatGPT: Canada  Google_Maps_Full Address: 75 Laurier Ave E, Ottawa, ON K1N 6N5, Canada </div>`)[0];
+                popup_65d91a61758e082c3e0aeeb0212e60f4.setContent(html_dc50a8b75ac6457767a36605d6909ace);
+            
+        
+
+        circle_marker_c1921508e3fdf25ae5e471e180626a39.bindPopup(popup_65d91a61758e082c3e0aeeb0212e60f4)
+        ;
+
+        
+    
+    
+            var circle_marker_5f01b45b2a77f92306df5f96c8d27ae4 = L.circleMarker(
+                [46.3470249, -72.5785097],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_f7aaf6f25588181b305a91b86f32aa75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44f226501fb22ef6db4125e1b6b2bbe3 = $(`<div id="html_44f226501fb22ef6db4125e1b6b2bbe3" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITE DU QUEBEC A TROIS-RIVIERES  Country_chatGPT: Canada.  Google_Maps_Full Address: 3351 Bd des Forges, Trois-Rivières, QC G8Z 4M3, Canada </div>`)[0];
+                popup_f7aaf6f25588181b305a91b86f32aa75.setContent(html_44f226501fb22ef6db4125e1b6b2bbe3);
+            
+        
+
+        circle_marker_5f01b45b2a77f92306df5f96c8d27ae4.bindPopup(popup_f7aaf6f25588181b305a91b86f32aa75)
+        ;
+
+        
+    
+    
+            var circle_marker_0c2b5cee8f2942a06b59bd17283b136e = L.circleMarker(
+                [52.1333989, -106.6313567],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_93c02b80f71f862931a4b0243c2aeed7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea78e0bea6eb4ad7a4b697e98ed1d5e4 = $(`<div id="html_ea78e0bea6eb4ad7a4b697e98ed1d5e4" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITY OF SASKATCHEWAN  Country_chatGPT: Canada  Google_Maps_Full Address: 105 Administration Pl, Saskatoon, SK S7N 5A2, Canada </div>`)[0];
+                popup_93c02b80f71f862931a4b0243c2aeed7.setContent(html_ea78e0bea6eb4ad7a4b697e98ed1d5e4);
+            
+        
+
+        circle_marker_0c2b5cee8f2942a06b59bd17283b136e.bindPopup(popup_93c02b80f71f862931a4b0243c2aeed7)
+        ;
+
+        
+    
+    
+            var circle_marker_fa9e1c2fdfdaeb4558dbf78da1bb5a61 = L.circleMarker(
+                [45.3779155, -71.92944050000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_27fc66a72a1c7a40f1677153b869bffa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43114420c0e1055308e78ada960b1ac9 = $(`<div id="html_43114420c0e1055308e78ada960b1ac9" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITE DE SHERBROOKE  Country_chatGPT: Canada  Google_Maps_Full Address: 2500 Bd de l'Université, Sherbrooke, QC J1K 2R1, Canada </div>`)[0];
+                popup_27fc66a72a1c7a40f1677153b869bffa.setContent(html_43114420c0e1055308e78ada960b1ac9);
+            
+        
+
+        circle_marker_fa9e1c2fdfdaeb4558dbf78da1bb5a61.bindPopup(popup_27fc66a72a1c7a40f1677153b869bffa)
+        ;
+
+        
+    
+    
+            var circle_marker_f29199efa1467d55bc6dd79fa965bff3 = L.circleMarker(
+                [43.5482599, -79.66268409999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_3248d35962215b80acae7086f55d3476 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f90a7a41620f2672ab280b42def25de7 = $(`<div id="html_f90a7a41620f2672ab280b42def25de7" style="width: 100.0%; height: 100.0%;">Center Name: UNIVERSITY OF TORONTO MISSISSAUGA  Country_chatGPT: Canada  Google_Maps_Full Address: 3359 Mississauga Rd, Mississauga, ON L5L 1C6, Canada </div>`)[0];
+                popup_3248d35962215b80acae7086f55d3476.setContent(html_f90a7a41620f2672ab280b42def25de7);
+            
+        
+
+        circle_marker_f29199efa1467d55bc6dd79fa965bff3.bindPopup(popup_3248d35962215b80acae7086f55d3476)
+        ;
+
+        
+    
+    
+            var circle_marker_453a14bc41ccca07e01fb390a0174cd9 = L.circleMarker(
+                [29.535475, 106.504511],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_f1139a13fbdeaa5a9d54f142d2d3265c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6b09e388c31e85852e9f9f1b447cf32 = $(`<div id="html_c6b09e388c31e85852e9f9f1b447cf32" style="width: 100.0%; height: 100.0%;">Center Name: CHILDREN HOSPITAL OF CHONGQING MEDICAL UNIVERSITY  Country_chatGPT: China  Google_Maps_Full Address: China, Chong Qing Shi, Yu Zhong Qu, 渝州路 邮政编码: 400042 </div>`)[0];
+                popup_f1139a13fbdeaa5a9d54f142d2d3265c.setContent(html_c6b09e388c31e85852e9f9f1b447cf32);
+            
+        
+
+        circle_marker_453a14bc41ccca07e01fb390a0174cd9.bindPopup(popup_f1139a13fbdeaa5a9d54f142d2d3265c)
+        ;
+
+        
+    
+    
+            var circle_marker_4d7dec110eddc115ffb0b81aef2930f2 = L.circleMarker(
+                [22.8152099, 108.32754],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_7f16f211f00906746f1830773f06f32b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_712c13049d11d1fc59f18346b8f15030 = $(`<div id="html_712c13049d11d1fc59f18346b8f15030" style="width: 100.0%; height: 100.0%;">Center Name: CHILDREN HOSPITAL OF GUANGXI ZHUANG AUTONOMOUS REGION  Country_chatGPT: China  Google_Maps_Full Address: Guangxi, China </div>`)[0];
+                popup_7f16f211f00906746f1830773f06f32b.setContent(html_712c13049d11d1fc59f18346b8f15030);
+            
+        
+
+        circle_marker_4d7dec110eddc115ffb0b81aef2930f2.bindPopup(popup_7f16f211f00906746f1830773f06f32b)
+        ;
+
+        
+    
+    
+            var circle_marker_d52c154306ac6e87431ddd0f539ed01f = L.circleMarker(
+                [29.55525799999999, 106.554408],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_80215849b685964679cb0e0eaf570072 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec8b3be734ca5a25c7887507e7439abb = $(`<div id="html_ec8b3be734ca5a25c7887507e7439abb" style="width: 100.0%; height: 100.0%;">Center Name: CHILDREN'S HOSPITAL OF CHONGQING MEDICAL UNIVERSITY  Country_chatGPT: China  Google_Maps_Full Address: 136 Zhong Shan Er Lu, Yu Zhong Qu, Chong Qing Shi, China, 400015 </div>`)[0];
+                popup_80215849b685964679cb0e0eaf570072.setContent(html_ec8b3be734ca5a25c7887507e7439abb);
+            
+        
+
+        circle_marker_d52c154306ac6e87431ddd0f539ed01f.bindPopup(popup_80215849b685964679cb0e0eaf570072)
+        ;
+
+        
+    
+    
+            var circle_marker_b49a30108488b29130018ad4deda31d6 = L.circleMarker(
+                [31.139468, 121.395243],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_d068ee306451a0b3abe216a100c3eb4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_746ee3d4180480865775ec248c0e2453 = $(`<div id="html_746ee3d4180480865775ec248c0e2453" style="width: 100.0%; height: 100.0%;">Center Name: CHILDREN'S HOSPITAL OF FUDAN UNIVERSITY  Country_chatGPT: China  Google_Maps_Full Address: 399 Wan Yuan Lu, Min Hang Qu, Shang Hai Shi, China, 201102 </div>`)[0];
+                popup_d068ee306451a0b3abe216a100c3eb4b.setContent(html_746ee3d4180480865775ec248c0e2453);
+            
+        
+
+        circle_marker_b49a30108488b29130018ad4deda31d6.bindPopup(popup_d068ee306451a0b3abe216a100c3eb4b)
+        ;
+
+        
+    
+    
+            var circle_marker_eee6206742db1830ca0dddad0c3991fb = L.circleMarker(
+                [39.939, 116.426567],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_deb1e4637656295b6146b1d33f35d2ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6cd2b9d49ba9c70eaecb48fed14267d = $(`<div id="html_d6cd2b9d49ba9c70eaecb48fed14267d" style="width: 100.0%; height: 100.0%;">Center Name: CHINA ACADEMY OF CHINESE MEDICAL SCIENCES  Country_chatGPT: China  Google_Maps_Full Address: China, Bei Jing Shi, Dong Cheng Qu, Dong Zhi Men Nan Xiao Jie, 东直门内南小街16 邮政编码: 100010 </div>`)[0];
+                popup_deb1e4637656295b6146b1d33f35d2ef.setContent(html_d6cd2b9d49ba9c70eaecb48fed14267d);
+            
+        
+
+        circle_marker_eee6206742db1830ca0dddad0c3991fb.bindPopup(popup_deb1e4637656295b6146b1d33f35d2ef)
+        ;
+
+        
+    
+    
+            var circle_marker_d94275e08d15c15bc7300f18e503b5a1 = L.circleMarker(
+                [39.911431, 116.41481],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_4965d1a5d1a460e492387920bca129fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6cd2fdff19e0d1e99038caf9ab5f73b = $(`<div id="html_b6cd2fdff19e0d1e99038caf9ab5f73b" style="width: 100.0%; height: 100.0%;">Center Name: NATIONAL CANCER CENTER/CANCER HOSPITAL, CHINESE ACADEMY OF MEDICAL SCIENCES  Country_chatGPT: China  Google_Maps_Full Address: China, Bei Jing Shi, Dong Cheng Qu, 东单三条9号 邮政编码: 100006 </div>`)[0];
+                popup_4965d1a5d1a460e492387920bca129fc.setContent(html_b6cd2fdff19e0d1e99038caf9ab5f73b);
+            
+        
+
+        circle_marker_d94275e08d15c15bc7300f18e503b5a1.bindPopup(popup_4965d1a5d1a460e492387920bca129fc)
+        ;
+
+        
+    
+    
+            var circle_marker_348357fcf987ef3720f87e5437421d6b = L.circleMarker(
+                [39.9106327, 116.3356321],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_fe8029062b71916be7383641632b641f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93b6bd36c8b056ad7b21e003fe3cbd2d = $(`<div id="html_93b6bd36c8b056ad7b21e003fe3cbd2d" style="width: 100.0%; height: 100.0%;">Center Name: CHINA ACADMY OF SCIENCES  Country_chatGPT: China.  Google_Maps_Full Address: 52 San Li He Lu, Xi Cheng Qu, Bei Jing Shi, China, 100045 </div>`)[0];
+                popup_fe8029062b71916be7383641632b641f.setContent(html_93b6bd36c8b056ad7b21e003fe3cbd2d);
+            
+        
+
+        circle_marker_348357fcf987ef3720f87e5437421d6b.bindPopup(popup_fe8029062b71916be7383641632b641f)
+        ;
+
+        
+    
+    
+            var circle_marker_d98442c8a0eb2e211fbbc2d9719e539a = L.circleMarker(
+                [26.1920826, 32.7452739],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_708776013fdd6290d449aabd9e2eb528 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1288d2a21a95577258f89f32d87a1e1 = $(`<div id="html_e1288d2a21a95577258f89f32d87a1e1" style="width: 100.0%; height: 100.0%;">Center Name: SOUTH VALLEY UNIVERSITY  Country_chatGPT: Egypt.  Google_Maps_Full Address: الكيلو 6 Qena - Safaga Rd, Qena Governorate, Egypt </div>`)[0];
+                popup_708776013fdd6290d449aabd9e2eb528.setContent(html_e1288d2a21a95577258f89f32d87a1e1);
+            
+        
+
+        circle_marker_d98442c8a0eb2e211fbbc2d9719e539a.bindPopup(popup_708776013fdd6290d449aabd9e2eb528)
+        ;
+
+        
+    
+    
+            var circle_marker_45761799230f62762b87441bfa758e06 = L.circleMarker(
+                [30.6229541, 32.2690689],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_f625db5b5e783d6823d1825079e973bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dc7ab7a49de3fe261d1c16ea0f13803 = $(`<div id="html_6dc7ab7a49de3fe261d1c16ea0f13803" style="width: 100.0%; height: 100.0%;">Center Name: SUEZ CANAL UNIVERSITY  Country_chatGPT: Egypt.  Google_Maps_Full Address: Ismailia, El Sheikh Zayed, EL SALAM DISTRICT، Ismailia Governorate 8366004, Egypt </div>`)[0];
+                popup_f625db5b5e783d6823d1825079e973bc.setContent(html_6dc7ab7a49de3fe261d1c16ea0f13803);
+            
+        
+
+        circle_marker_45761799230f62762b87441bfa758e06.bindPopup(popup_f625db5b5e783d6823d1825079e973bc)
+        ;
+
+        
+    
+    
+            var circle_marker_6f5d4c387b04a3a4db928e6bc879f0de = L.circleMarker(
+                [9.0335063, 38.7636817],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_881e754af48a42464f64d3cfca9bbec8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20b49cc0904514c1ddea985fa277f7ef = $(`<div id="html_20b49cc0904514c1ddea985fa277f7ef" style="width: 100.0%; height: 100.0%;">Center Name: ADDIS ABABA UNIVERSITY  Country_chatGPT: Ethiopia  Google_Maps_Full Address: NBH1, 4killo King George VI St, Addis Ababa, Ethiopia </div>`)[0];
+                popup_881e754af48a42464f64d3cfca9bbec8.setContent(html_20b49cc0904514c1ddea985fa277f7ef);
+            
+        
+
+        circle_marker_6f5d4c387b04a3a4db928e6bc879f0de.bindPopup(popup_881e754af48a42464f64d3cfca9bbec8)
+        ;
+
+        
+    
+    
+            var circle_marker_bafa7150d8560455e9412c96772d312b = L.circleMarker(
+                [20.593684, 78.96288],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_80ceff066981464a85db900cff75c935 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76739a72d83872a2f3844fa0f90b06e3 = $(`<div id="html_76739a72d83872a2f3844fa0f90b06e3" style="width: 100.0%; height: 100.0%;">Center Name: INTERNATIONAL CROPS RESEARCH INSTITUTE FOR THE SEMI-ARID TROPICS (ICRISAT)  Country_chatGPT: India  Google_Maps_Full Address: India </div>`)[0];
+                popup_80ceff066981464a85db900cff75c935.setContent(html_76739a72d83872a2f3844fa0f90b06e3);
+            
+        
+
+        circle_marker_bafa7150d8560455e9412c96772d312b.bindPopup(popup_80ceff066981464a85db900cff75c935)
+        ;
+
+        
+    
+    
+            var circle_marker_b0ab175f62efaca58eabfcb30f3077d6 = L.circleMarker(
+                [8.7668055, 38.999083],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_beb821edf72217ad822b8cca8c9d5559 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22969f482ceaa59a80cfe90dd71fe66b = $(`<div id="html_22969f482ceaa59a80cfe90dd71fe66b" style="width: 100.0%; height: 100.0%;">Center Name: NATIONAL VETERINARY INSTITUTE  Country_chatGPT: I am sorry, but there are multiple institutions with the name "National Veterinary Institute" located in different countries. Could you please provide more information about the specific institution you are referring to?  Google_Maps_Full Address: QX8X+PJG, Bishoftu, Ethiopia </div>`)[0];
+                popup_beb821edf72217ad822b8cca8c9d5559.setContent(html_22969f482ceaa59a80cfe90dd71fe66b);
+            
+        
+
+        circle_marker_b0ab175f62efaca58eabfcb30f3077d6.bindPopup(popup_beb821edf72217ad822b8cca8c9d5559)
+        ;
+
+        
+    
+    
+            var circle_marker_988baf961ddbeecfbd81de56a477051c = L.circleMarker(
+                [42.3628314, -71.0888228],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_32b6486ff5c68de5a08352a34b53063c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b88684aefeb82bb1d45c51724983ecd = $(`<div id="html_7b88684aefeb82bb1d45c51724983ecd" style="width: 100.0%; height: 100.0%;">Center Name: BI  Country_chatGPT: United States  Google_Maps_Full Address: Merkin Building, 415 Main St, Cambridge, MA 02142, USA </div>`)[0];
+                popup_32b6486ff5c68de5a08352a34b53063c.setContent(html_7b88684aefeb82bb1d45c51724983ecd);
+            
+        
+
+        circle_marker_988baf961ddbeecfbd81de56a477051c.bindPopup(popup_32b6486ff5c68de5a08352a34b53063c)
+        ;
+
+        
+    
+    
+            var circle_marker_5883b067b71aa9251495c9ac7028a960 = L.circleMarker(
+                [40.00758099999999, -105.2659417],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_8e951369f78a7eed5a1131cd84483f19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ead9b15a7811fde51e0d325e3247ff4 = $(`<div id="html_5ead9b15a7811fde51e0d325e3247ff4" style="width: 100.0%; height: 100.0%;">Center Name: CU  Country_chatGPT: United States  Google_Maps_Full Address: Boulder, CO 80309, USA </div>`)[0];
+                popup_8e951369f78a7eed5a1131cd84483f19.setContent(html_5ead9b15a7811fde51e0d325e3247ff4);
+            
+        
+
+        circle_marker_5883b067b71aa9251495c9ac7028a960.bindPopup(popup_8e951369f78a7eed5a1131cd84483f19)
+        ;
+
+        
+    
+    
+            var circle_marker_e7db0393d198707e0805bea68ffacdba = L.circleMarker(
+                [39.4816093, -0.3530918],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_ec5235c25aafbb814b9e21499c128125);
+        
+    
+        var popup_5bd0a557e494efa748e90bf3777cdd82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_241cd2e76818ce9ca05d5abc65b99486 = $(`<div id="html_241cd2e76818ce9ca05d5abc65b99486" style="width: 100.0%; height: 100.0%;">Center Name: FISABIO - PUBLIC HEALTH  Country_chatGPT: Spain  Google_Maps_Full Address: Av. de Catalunya, 21, 46020 València, Valencia, Spain </div>`)[0];
+                popup_5bd0a557e494efa748e90bf3777cdd82.setContent(html_241cd2e76818ce9ca05d5abc65b99486);
+            
+        
+
+        circle_marker_e7db0393d198707e0805bea68ffacdba.bindPopup(popup_5bd0a557e494efa748e90bf3777cdd82)
+        ;
+
+        
+    
+</script>
+</html>
