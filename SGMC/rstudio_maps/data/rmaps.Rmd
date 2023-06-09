@@ -1,18 +1,21 @@
 
 ```{r module load}
+install.packages("devtools")
+devtools::install_github("wmurphyrd/fiftystater")
 library(fiftystater)
-library(dplyr, lib.loc = "/opt/R/4.0.4/lib/R/library")
+library(dplyr)
+install.packages('rworldmap',dependencies=TRUE)
 library(rworldmap)
 library(readxl)
-library(ggplot2, lib.loc = "/opt/R/4.0.4/lib/R/library")
+library(ggplot2)
 
 
 ```
 
 
 ```{r us heatmap}
-map <- read_excel("~/Rmaps/data/fiftystater_submissions.xlsx") 
-center <- read_excel("~/Rmaps/data/us_centercount.xlsx")
+map <- read_excel("SGMC/rstudio_maps/data/fiftystater_submissions.xlsx") 
+center <- read_excel("SGMC/rstudio_maps/data/us_centercount.xlsx")
 
 color_breaks <- c(1,10,100,500,10000,100000,200000)
 colors <- c('#deebf7','#c6dbef','#c6dbef','#4292c6', '#2171b5','#08306b')
@@ -34,8 +37,8 @@ p1<-ggplot(data = map) +
 ```
 
 ```{r global heatmap}
-map <- read_excel("~/Rmaps/data/rworldmap_submissions.xlsx")
-center <- read_excel("~/Rmaps/data/world_centercount.xlsx")
+map <- read_excel("SGMC/rstudio_maps/data/rworldmap_submissions.xlsx")
+center <- read_excel("SGMC/rstudio_maps/data/world_centercount.xlsx")
 
 color_breaks <- c(0,1,10,100,1000,10000,100000,1000934)
 colors <- c('white','#deebf7','#c6dbef','#9ecae1','#6baed6','#4292c6','#2171b5','#08519c','#08306b')
@@ -53,6 +56,20 @@ p2
 
 ```
 
+```{r module load}
+
+ggsave(
+    filename="SGMC/data/output/us_map.pdf",
+    plot = p1,
+    device = "pdf")
+
+ggsave(
+    filename="SGMC/data/output/world_map.pdf",
+    plot = p2,
+    device = "pdf")
+
+
+```
 
 
 
