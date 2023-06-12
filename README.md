@@ -9,6 +9,7 @@ To use the SGMC Pipeline, you will need the following:
 - Python v3
 - OpenAI API key.
 - Google Maps API key.
+- Google Service Account Key
 
 ## Installation
 
@@ -35,6 +36,8 @@ $ pip install -r requirements.txt
 ## Usage
 
 The SGMC Pipeline consists of several Jupyter Notebook files that represent each step of the pipeline. Here's a brief description of each file:
+
+- `00_SRA_Cloud_metadata.ipynb`: This notebook handles the preliminary SRA in the cloud data retrieval.
 
 - `01_NCBI_webScrape.ipynb`: This notebook handles the data retrieval and web scraping process to extract relevant information from the NCBI SRA.
 
