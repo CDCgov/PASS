@@ -65,7 +65,10 @@ $ poetry shell
 
 ```shell
 $ poetry run ipython kernel install --user --name=sgmc_kernel
+$ jupyter notebook
 ```
+And then select the created kernel in “Kernel” -> “Change kernel”.
+
 ## Usage
 
 The SGMC Pipeline consists of several Jupyter Notebook files that represent each step of the pipeline. Here's a brief description of each file:
