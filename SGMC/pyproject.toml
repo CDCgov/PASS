@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "sgmc"
+version = "0.1.0"
+description = "Python-based information-retrieval application aims to automate and streamline the process of collecting and curating geospatial metadata from the NCBI SRA (Sequence Read Archive). The pipeline consists of four main steps: data retrieval, web scraping, institution identification, and location identification."
+authors = ["Mel Mashiku <125285607+svo2cdc@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.6"
+folium = "0.13.0"
+geocoder = "1.38.1"
+geographiclib = "1.52"
+geojson = "2.5.0"
+geopy = "2.2.0"
+googlemaps = "4.6.0"
+goopylib = "1.0.226"
+pandas = "1.3.3"
+tqdm = "4.64.1"
+matplotlib = "3.5.3"
+openai = "0.27.2"
+retrying = "1.3.4"
+beautifulsoup4 = "4.11.1"
+google-cloud-bigquery = "3.11.0"
+db-dtypes = "1.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
