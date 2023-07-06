@@ -11,7 +11,9 @@ To use the SGMC Pipeline, you will need the following:
 - Google Maps API key.
 - Google Service Account Key
 
-## Installation
+## Installation options
+
+### **Installation via pip**
 
 To get started with the SGMC Pipeline, follow these steps:
 
@@ -31,6 +33,32 @@ $ cd SGMC
 
 ```shell
 $ pip install -r requirements.txt
+```
+### **Installation via [Poetry](https://python-poetry.org/docs/basic-usage/)**
+
+To get started with the SGMC Pipeline, follow these steps:
+
+1. Clone the repository to your local machine:
+
+```shell
+$ git clone https://github.com/CDCgov/PASS.git
+```
+
+2. Navigate to the repository directory:
+
+```shell
+$ cd SGMC
+```
+
+3. Install the Poetry:
+
+```shell
+$ pip install poetry
+```
+4. Activate the enviroment:
+
+```shell
+$ poetry shell
 ```
 
 ## Usage
