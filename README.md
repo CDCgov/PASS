@@ -7,9 +7,13 @@ Welcome to the SGMC Pipeline repository! This Python-based information-retrieval
 To use the SGMC Pipeline, you will need the following:
 
 - Python 3.10.6
-- OpenAI API key.
-- Google Maps API key.
-- Google Service Account Key
+- Jupyter Notebook
+
+The following keys are also required at various points in the pipeline.  Instructions on how to generate each key are included in the notebook file where each one is required:
+
+- Google Service Account Key 
+- OpenAI API key 
+- Google Maps API key 
 
 ## Installation options
 
