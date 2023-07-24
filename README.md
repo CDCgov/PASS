@@ -7,9 +7,13 @@ Welcome to the SGMC Pipeline repository! This Python-based information-retrieval
 To use the SGMC Pipeline, you will need the following:
 
 - Python 3.10.6
-- OpenAI API key.
-- Google Maps API key.
-- Google Service Account Key
+- Jupyter Notebook
+
+The following keys are also required at various points in the pipeline.  Instructions on how to generate each key are included in the notebook file where each one is required:
+
+- Google Service Account Key 
+- OpenAI API key 
+- Google Maps API key 
 
 ## Installation options
 
@@ -17,7 +21,7 @@ To use the SGMC Pipeline, you will need the following:
 
 To get started with the SGMC Pipeline, follow these steps:
 
-1. Clone the repository to your local machine:
+1. Navigate to the directory where you want to install the repository, and then clone the repository to your local machine:
 
 ```shell
 $ git clone https://github.com/CDCgov/PASS.git
@@ -26,7 +30,7 @@ $ git clone https://github.com/CDCgov/PASS.git
 2. Navigate to the repository directory:
 
 ```shell
-$ cd SGMC
+$ cd PASS/SGMC
 ```
 
 3. Install the required dependencies:
@@ -38,7 +42,7 @@ $ pip install -r requirements.txt
 
 To get started with the SGMC Pipeline, follow these steps:
 
-1. Clone the repository to your local machine:
+1. Navigate to the directory where you want to install the repository, and then clone the repository to your local machine:
 
 ```shell
 $ git clone https://github.com/CDCgov/PASS.git
@@ -47,7 +51,7 @@ $ git clone https://github.com/CDCgov/PASS.git
 2. Navigate to the repository directory:
 
 ```shell
-$ cd SGMC
+$ cd PASS/SGMC
 ```
 
 3. Install the Poetry:
@@ -61,13 +65,13 @@ $ pip install poetry
 $ poetry shell
 ```
 
-4. Create jupyter kernel:
+5. Create jupyter kernel:
 
 ```shell
 $ poetry run ipython kernel install --user --name=sgmc_kernel
 $ jupyter notebook
 ```
-And then select the created kernel in “Kernel” -> “Change kernel”.
+And then select the created kernel in “Kernel” -> “Change kernel” -> "sgmc_kernel".  Make certain that the "sgmc_kernel" is selected in each notebook file.
 
 ## Usage
 
