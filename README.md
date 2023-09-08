@@ -6,7 +6,8 @@ Welcome to the SGMC Pipeline repository! This Python-based information-retrieval
 
 To use the SGMC Pipeline, you will need the following:
 
-- Python 3.10.6
+- Python version: 3.10.6
+- R version: 4
 - Jupyter Notebook
 
 The following keys are also required at various points in the pipeline.  Instructions on how to generate each key are included in the notebook file where each one is required:
@@ -77,15 +78,13 @@ And then select the created kernel in “Kernel” -> “Change kernel” -> "sg
 
 The SGMC Pipeline consists of several Jupyter Notebook files that represent each step of the pipeline. Here's a brief description of each file:
 
-- `00_SRA_Cloud_metadata.ipynb`: This notebook handles the preliminary SRA in the cloud data retrieval.
+- `00_GCP_SRA_Cloud_metadata.ipynb` and `00_AWS_SRA_Cloud_metadata.ipynb` : These notebooks handle the preliminary SRA in the cloud data retrieval. Options `GCP` and `AWS`.
 
 - `01_NCBI_webScrape.ipynb`: This notebook handles the data retrieval and web scraping process to extract relevant information from the NCBI SRA.
 
 - `02_ChatGPT_API_Institution Imputation.ipynb`: This notebook utilizes the ChatGPT API for institution identification. It leverages artificial intelligence to curate and update geospatial metadata.
 
-- `03_geolocator_google_API.ipynb`: This notebook performs location identification using the Google Geocoding API. It helps in standardizing and enriching the geospatial metadata.
-
-- `04_Map_Visualization.ipynb`: This notebook allows you to visualize the curated geospatial metadata on a map.
+- `03_rmaps.ipynb`: This notebook runs R code to performs map generation from in this pipeline geospatial metadata.
 
 Please note that the `data` directory contains the data files necessary for the pipeline execution, and the `rstudio_maps` directory stores the generated map visualization.
 
