@@ -14,8 +14,7 @@ The following keys are also required at various points in the pipeline.  Instruc
 
 - Google Service Account Key
 - AWS Credentials Access Key  
-- OpenAI API key 
-- Google Maps API key 
+- OpenAI API key
 
 ## Installation options
 
