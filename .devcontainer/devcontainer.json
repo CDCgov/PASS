@@ -21,12 +21,14 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				// Add Jupyter and Python vscode extensions
 				"ms-toolsai.jupyter",
 				"ms-toolsai.jupyter-renderers",
 				"ms-python.python",
 				"ms-python.vscode-pylance",
-				"vsls-contrib.codetour"
+				"tomoki1207.pdf",
+				"vsls-contrib.codetour",
+				"GrapeCity.gc-excelviewer",
+				"mathematic.vscode-pdf"
 			]
 		}
 	},
