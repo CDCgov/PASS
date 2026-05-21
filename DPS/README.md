@@ -1,6 +1,6 @@
 # DPS
 
-DPS is a data repo for the manuscript entitled "Detecting poliovirus sequences in the Sequence Read Archive database using bioinformatics tools". Each folder contains the commands, alignments results, accession information, and other information following each methods and results section in the manuscript.  
+DPS is a data repo for the manuscript entitled "Detecting poliovirus sequences in the Sequence Read Archive database using bioinformatics tools". Each folder contains the alignments results, accession information, and other information following each methods and results section in the manuscript.  
 
 ## Status
 
