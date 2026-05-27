@@ -1,0 +1,120 @@
+
+```{r load module and data}
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(rmarkdown)
+
+
+
+
+region_anno<- read_excel("~/rdata/refseq_region_anno.xlsx")
+seqsmall<- read_excel("~/rdata/refseq_small_r.xlsx")
+#anno<- read_excel("~/rdata/refseq_polioblast_anno_r.xlsx")
+seqvertmam<-read_excel("~/rdata/refseq_vertmam_r.xlsx")
+seqvertother<-read_excel("~/rdata/refseq_vertother_r.xlsx")
+seqbac<-read_excel("~/rdata/refseq_bac.xlsx")
+
+```
+
+```{r define}
+
+archaea<-filter(seqsmall, type %in% c("Archaea"))
+bacteria<-filter(seqbac, type %in% c("Bacteria"))
+fungi<-filter(seqsmall, type %in% c("Fungi"))
+invert<-filter(seqsmall, type %in% c("Invertebrate"))
+mito<-filter(seqsmall, type %in% c("Mitochondrion"))
+nonentero<-filter(seqsmall, type %in% c("Non-entero viruses"))
+entero<-filter(seqsmall, type %in% c("Non-polio enteroviruses"))
+other<-filter(seqsmall, type %in% c("Other"))
+plant<-filter(seqsmall, type %in% c("Plant"))
+plasmid<-filter(seqsmall, type %in% c("Plasmid"))
+plastid<-filter(seqsmall, type %in% c("Plastid"))
+prot<-filter(seqsmall, type %in% c("Protozoa"))
+vertmam<-filter(seqvertmam, type %in% c("Vertebrate (mam)"))
+vertother<-filter(seqvertother, type %in% c("Vertebrate (other)"))
+
+
+archaea_anno<-filter(seqsmall, type %in% c("Archaea"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+
+bacteria_anno<-filter(seqbac, type %in% c("Bacteria"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+fungi_anno<-filter(seqsmall, type %in% c("Fungi"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+invert_anno<-filter(seqsmall, type %in% c("Invertebrate"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+mito_anno<-filter(seqsmall, type %in% c("Mitochondrion"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+nonentero_anno<-filter(seqsmall, type %in% c("Non-entero viruses"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+entero_anno<-filter(seqsmall, type %in% c("Non-polio enteroviruses"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+other_anno<-filter(seqsmall, type %in% c("Other"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+plant_anno<-filter(seqsmall, type %in% c("Plant"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+plasmid_anno<-filter(seqsmall, type %in% c("Plasmid"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+plastid_anno<-filter(seqsmall, type %in% c("Plastid"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+prot_anno<-filter(seqsmall, type %in% c("Protozoa"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+vertmam_anno<-filter(seqvertmam, type %in% c("Vertebrate (mam)"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+vertother_anno<-filter(seqvertother, type %in% c("Vertebrate (other)"), anno %in% c("VP1", "VP2", "VP3", "VP4"))
+
+colors3<-c('#1F77B4', '#D62728', '#2CA02C', '#9467BD', '#FF7F0E', '#17BECF','#AA3377' )
+
+
+```
+
+
+```{r figure 1}
+
+
+
+b<-ggplot(region_anno, aes(fill=type_group, y= countlog, x=range)) + 
+  geom_bar(stat='identity', color = NA) +
+  scale_fill_manual(values=colors3, labels = c("Animals", "Eukaryotes", "Mobilome, \nMito., & Other", "Non-entero \nviruses", "Non-polio \nenteroviruses", "Plants & \nPlant Organelles", "Prokaryotes")) +
+  facet_grid(~ factor(region, levels=c("5'UTR","Capsid Region", "2A-3D","3'UTR"))) +
+  theme_bw() +
+  scale_x_discrete(limits = c("<50","50-99", "100-199","200-999", "1000+")) +
+  labs( x = "Alignment Length Ranges (base pair)", y = "Total Aligned Unique RefSeq Organisms per \nPoliovirus Region (Log10 Scale)") +
+  ggtitle("Alignment length ranges of poliovirus genome segments that align to the complete genomes of all \nunique RefSeq non-poliovirus organisms (log10 scale)")+
+  theme(legend.position = "bottom", legend.title = element_blank(), legend.text = element_text(size = 10), legend.key.size = unit(0.7, "cm")) +
+  theme(text = element_text(size = 10, family = "Times New Roman")) +
+  theme(plot.title = element_text(hjust = 0.5, size = 11))+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size=11))+
+  theme(axis.text.y = element_text(size=10))
+b
+
+#ggsave("~/Figure1_grouped_bottom_edit.jpg", plot = b, width = 7, height = 5, dpi = 300)
+```
+
+```{r manuscript figure 2}
+eqn <- function(x) {
+  0.0015*(x-103)^{2}+1.5}
+eqn
+data<-data.frame(x = seq(60, 100, by = 1))
+data$y <- eqn(data$x)
+
+
+a<-ggplot(seqsmall) +
+  geom_point(bacteria_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(entero_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(nonentero_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(vertmam_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(vertother_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(plant_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(invert_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(prot_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(fungi_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(archaea_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(mito_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(plasmid_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(plastid_anno, mapping=aes(x=pident, y=lengthlog, color=type_group))+
+  geom_point(other_anno, mapping=aes(x=pident, y=lengthlog, color= type_group))+
+  geom_line(data, mapping = aes(x=x, y=y)) +
+  scale_color_manual(values=colors3, labels = c("Animals", "Eukaryotes", "Mobilome, \nMito., & Other", "Non-entero \nviruses", "Non-polio \nenteroviruses", "Plants & \nPlant Organelles", "Prokaryotes")) +
+   labs(y="Alignment Length (Log10)", x="Percent Identity")+
+  ggtitle("Percent identity of alignments between non-poliovirus genomes and the \npoliovirus capsid region compared to alignment length (log10 scale)")+
+  theme_bw() +
+  theme(legend.title = element_blank(), legend.text = element_text(size = 11), legend.key.size = unit(0.9, "cm")) +
+  theme(text = element_text(size = 11, family = "Times New Roman")) +
+  theme(plot.title = element_text(hjust = 0.5, size = 12))+
+  scale_y_continuous(limits = c(1, 3.5))
+  
+a
+#ggsave("~/Figure2_grouped_edit.jpg", plot = a, width = 7, height = 5, dpi = 300)
+
+
+```
+
