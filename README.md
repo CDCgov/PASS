@@ -21,7 +21,7 @@ If you use a PASS project in your work, please cite the corresponding paper.
 
 ```bibtex
 @article{zhao2023sgmc,
-  author  = {Zhao, Kun and Farrell, Kelly and Mashiku, Melchy and Abay, Dawit and Tang, Kun and Oberste, M. Steven and Burns, Cara C.},
+  author  = {Zhao, Kun and Farrell, Katie and Mashiku, Mel and Abay, Dawit and Tang, Kevin and Oberste, M. Steven and Burns, Cara C.},
   title   = {A search-based geographic metadata curation pipeline to refine sequencing institution information and support public health},
   journal = {Frontiers in Public Health},
   volume  = {11},
